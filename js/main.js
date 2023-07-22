@@ -8,9 +8,23 @@ const myContainer = document.querySelector(".my-container")
 
 for (let i = 1; i <= 100; i++) {
 
-    if (i % 3 == 0) {
+
+    if (i % 3 == 0 && i % 5 == 0) {
+
+        myContainer.innerHTML += "FIZZ BUZZ<br>"
+
+    }
+
+
+    else if (i % 3 == 0) {
         myContainer.innerHTML += "FIZZ <br>"
     }
+
+    else if (i % 5 == 0)
+
+        myContainer.innerHTML += "BUZZ <br>"
+
+
 
 
     else {
